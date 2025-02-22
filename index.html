@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mike Lightcap</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font: Montserrat for a clean, modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Mike Lightcap</div>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <!-- Hero Section -->
-    <header class="hero">
-        <img src="https://via.placeholder.com/1200x400" alt="Hero Banner">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Let’s create something amazing together.</p>
-        </div>
-    </header>
-
-    <!-- About Me Section -->
-    <section class="about-me">
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Graphic Designer</h1>
+        <p>Graphics•Motion•Video</p>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
         <h2>About Me</h2>
-        <p>Hello! I'm a passionate designer and developer focused on creating impactful visual identities and functional web experiences.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel magna quis leo congue pretium. Sed fermentum orci ut massa volutpat tincidunt.</p>
+      </div>
     </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <!-- 9 Placeholder Images -->
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 1">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 2">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 3">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 4">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 5">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 6">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 7">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 8">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 9">
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <img src="https://via.placeholder.com/400x300" alt="Project 1">
+            <h3>Project One</h3>
+          </div>
+          <div class="project">
+            <img src="https://via.placeholder.com/400x300" alt="Project 2">
+            <h3>Project Two</h3>
+          </div>
+          <div class="project">
+            <img src="https://via.placeholder.com/400x300" alt="Project 3">
+            <h3>Project Three</h3>
+          </div>
         </div>
+      </div>
     </section>
-
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mike Lightcap. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
