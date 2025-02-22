@@ -12,13 +12,27 @@
   <!-- Header & Navigation -->
   <header>
     <nav>
-      <div class="logo">Mike Lightcap</div>
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="nav-container">
+        <div class="logo">Mike Lightcap</div>
+        <!-- Hamburger Icon (Hidden on Desktop) -->
+        <div class="hamburger" onclick="toggleMenu()">
+          ☰
+        </div>
+        <!-- Nav Menu Items (Hidden on Mobile) -->
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Mobile Dropdown Menu -->
+      <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </ul>
     </nav>
+    
     <!-- Hero Section -->
     <div class="hero">
       <div class="hero-overlay"></div>

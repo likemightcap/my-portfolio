@@ -19,45 +19,98 @@
     margin: 0 auto;
   }
   
-  /* Navigation */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #eee;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Desktop Navigation Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #555;
+}
+
+/* Hamburger Icon (Hidden on Desktop) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Dropdown Menu (Initially Hidden) */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 150px;
+  list-style: none;
+  padding: 10px;
+}
+
+.mobile-menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.mobile-menu li a:hover {
+  background: #f0f0f0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
   .nav-menu {
-    list-style: none;
-    display: flex;
+    display: none; /* Hide regular nav on mobile */
   }
   
-  .nav-menu li {
-    margin-left: 20px;
+  .hamburger {
+    display: block; /* Show hamburger menu */
   }
-  
-  .nav-menu li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
+
+  .mobile-menu.active {
+    display: block;
   }
-  
-  .nav-menu li a:hover {
-    color: #555;
-  }
+}
+
   
   /* Hero Section */
   .hero {
