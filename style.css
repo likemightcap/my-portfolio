@@ -110,6 +110,32 @@ nav {
     display: block;
   }
 }
+/* Logo Styling */
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+/* Blinking Cursor */
+.cursor {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  animation: blink 0.8s infinite;
+}
+
+/* Cursor Blinking Animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 
   
