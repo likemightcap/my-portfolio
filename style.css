@@ -135,6 +135,10 @@ nav {
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
+/* Remove underline from the logo link */
+.logo {
+  text-decoration: none;
+}
 
 
 
